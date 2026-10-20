@@ -1,0 +1,18 @@
+# Core
+torch>=2.1
+numpy
+scipy
+scikit-learn
+gensim>=4.3
+transformers>=4.40
+matplotlib
+tqdm
+# Objective 3 web prototype
+pandas
+streamlit>=1.40
+altair>=5
+# Live C++ -> AST conversion (libclang 13 reproduces the dataset's trees exactly)
+libclang==13.0.0
+pcpp>=1.30
+# Tests
+pytest

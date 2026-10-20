@@ -1,0 +1,221 @@
+learner,method,HR@10,NDCG@10,targets_6_weakest
+Fast_n_Furious,Random,0.0,0.0,0.22
+Fast_n_Furious,Popularity,1.0,0.4394,0.12
+Fast_n_Furious,DMF only (no KSAP filters),0.0,0.0,0.08
+Fast_n_Furious,KSAP v1 (paper-faithful),0.2,0.0157,0.48
+Fast_n_Furious,KSAP v2,0.2,0.0284,0.46
+Fast_n_Furious,v2 - knowledge graph (order by mastery),0.0,0.0,1.0
+Fast_n_Furious,v2 - DPM (no difficulty filter),0.4,0.0587,0.48
+Fast_n_Furious,v2 - DMF (popularity ranking),0.6,0.2151,0.46
+Fast_n_Furious,v2 - diagnosis (all concepts weak),0.6,0.0972,0.06
+Fast_n_Furious,v2 targeted (6 weakest concepts),0.2,0.0284,0.48
+AndresRPerez,Random,0.0,0.0,0.34
+AndresRPerez,Popularity,1.0,0.0746,0.12
+AndresRPerez,DMF only (no KSAP filters),0.0,0.0,0.44
+AndresRPerez,KSAP v1 (paper-faithful),0.0,0.0,0.36
+AndresRPerez,KSAP v2,0.0,0.0,0.34
+AndresRPerez,v2 - knowledge graph (order by mastery),0.0,0.0,1.0
+AndresRPerez,v2 - DPM (no difficulty filter),0.0,0.0,0.32
+AndresRPerez,v2 - DMF (popularity ranking),1.0,0.0684,0.22
+AndresRPerez,v2 - diagnosis (all concepts weak),0.0,0.0,0.34
+AndresRPerez,v2 targeted (6 weakest concepts),0.0,0.0,0.34
+C-_-Devil_Code,Random,0.4,0.026,0.2
+C-_-Devil_Code,Popularity,0.8,0.6615,0.08
+C-_-Devil_Code,DMF only (no KSAP filters),1.0,0.552,0.16
+C-_-Devil_Code,KSAP v1 (paper-faithful),0.8,0.3656,0.3
+C-_-Devil_Code,KSAP v2,0.8,0.3795,0.3
+C-_-Devil_Code,v2 - knowledge graph (order by mastery),0.2,0.0327,1.0
+C-_-Devil_Code,v2 - DPM (no difficulty filter),0.8,0.4393,0.38
+C-_-Devil_Code,v2 - DMF (popularity ranking),0.8,0.3786,0.32
+C-_-Devil_Code,v2 - diagnosis (all concepts weak),1.0,0.464,0.14
+C-_-Devil_Code,v2 targeted (6 weakest concepts),0.8,0.3795,0.34
+BlackDwek,Random,0.2,0.0139,0.3
+BlackDwek,Popularity,0.0,0.0,0.08
+BlackDwek,DMF only (no KSAP filters),0.4,0.0915,0.16
+BlackDwek,KSAP v1 (paper-faithful),0.6,0.0557,0.18
+BlackDwek,KSAP v2,0.8,0.0555,0.06
+BlackDwek,v2 - knowledge graph (order by mastery),0.8,0.1498,1.0
+BlackDwek,v2 - DPM (no difficulty filter),0.8,0.1242,0.14
+BlackDwek,v2 - DMF (popularity ranking),0.0,0.0,0.1
+BlackDwek,v2 - diagnosis (all concepts weak),0.8,0.0555,0.06
+BlackDwek,v2 targeted (6 weakest concepts),0.8,0.0555,0.06
+Gushi,Random,0.0,0.0,0.36
+Gushi,Popularity,0.0,0.0,0.22
+Gushi,DMF only (no KSAP filters),0.0,0.0,0.14
+Gushi,KSAP v1 (paper-faithful),0.2,0.044,0.4
+Gushi,KSAP v2,0.2,0.0567,0.16
+Gushi,v2 - knowledge graph (order by mastery),0.0,0.0,1.0
+Gushi,v2 - DPM (no difficulty filter),0.0,0.0,0.14
+Gushi,v2 - DMF (popularity ranking),0.0,0.0,0.16
+Gushi,v2 - diagnosis (all concepts weak),0.2,0.0567,0.16
+Gushi,v2 targeted (6 weakest concepts),0.2,0.0567,0.22
+Captain_nick,Random,0.0,0.0,0.36
+Captain_nick,Popularity,0.0,0.0,0.2
+Captain_nick,DMF only (no KSAP filters),0.0,0.0,0.44
+Captain_nick,KSAP v1 (paper-faithful),0.0,0.0,0.56
+Captain_nick,KSAP v2,0.0,0.0,0.46
+Captain_nick,v2 - knowledge graph (order by mastery),0.0,0.0,1.0
+Captain_nick,v2 - DPM (no difficulty filter),0.0,0.0,0.48
+Captain_nick,v2 - DMF (popularity ranking),0.8,0.2113,0.34
+Captain_nick,v2 - diagnosis (all concepts weak),0.0,0.0,0.46
+Captain_nick,v2 targeted (6 weakest concepts),0.0,0.0,0.46
+BluBeer,Random,0.0,0.0,0.34
+BluBeer,Popularity,0.8,0.0598,0.02
+BluBeer,DMF only (no KSAP filters),1.0,0.1355,0.12
+BluBeer,KSAP v1 (paper-faithful),1.0,0.3011,0.24
+BluBeer,KSAP v2,1.0,0.3011,0.14
+BluBeer,v2 - knowledge graph (order by mastery),0.2,0.0278,1.0
+BluBeer,v2 - DPM (no difficulty filter),1.0,0.0948,0.12
+BluBeer,v2 - DMF (popularity ranking),0.8,0.0681,0.06
+BluBeer,v2 - diagnosis (all concepts weak),1.0,0.3011,0.14
+BluBeer,v2 targeted (6 weakest concepts),1.0,0.3011,0.14
+ATS,Random,0.2,0.0133,0.14
+ATS,Popularity,0.0,0.0,0.04
+ATS,DMF only (no KSAP filters),0.4,0.1348,0.14
+ATS,KSAP v1 (paper-faithful),0.6,0.0543,0.5
+ATS,KSAP v2,0.4,0.0532,0.42
+ATS,v2 - knowledge graph (order by mastery),0.2,0.0327,1.0
+ATS,v2 - DPM (no difficulty filter),0.4,0.0532,0.38
+ATS,v2 - DMF (popularity ranking),0.2,0.0133,0.26
+ATS,v2 - diagnosis (all concepts weak),0.4,0.0532,0.26
+ATS,v2 targeted (6 weakest concepts),0.4,0.0532,0.42
+-Chim-,Random,0.4,0.061,0.32
+-Chim-,Popularity,0.6,0.0912,0.12
+-Chim-,DMF only (no KSAP filters),1.0,0.1972,0.16
+-Chim-,KSAP v1 (paper-faithful),0.8,0.08,0.2
+-Chim-,KSAP v2,1.0,0.1326,0.1
+-Chim-,v2 - knowledge graph (order by mastery),0.6,0.1135,1.0
+-Chim-,v2 - DPM (no difficulty filter),1.0,0.2332,0.28
+-Chim-,v2 - DMF (popularity ranking),0.6,0.1631,0.14
+-Chim-,v2 - diagnosis (all concepts weak),1.0,0.1326,0.1
+-Chim-,v2 targeted (6 weakest concepts),1.0,0.1326,0.1
+GK_Ebbaka,Random,0.0,0.0,0.3
+GK_Ebbaka,Popularity,0.0,0.0,0.3
+GK_Ebbaka,DMF only (no KSAP filters),0.0,0.0,0.325
+GK_Ebbaka,KSAP v1 (paper-faithful),0.0,0.0,0.4
+GK_Ebbaka,KSAP v2,0.0,0.0,0.175
+GK_Ebbaka,v2 - knowledge graph (order by mastery),0.0,0.0,1.0
+GK_Ebbaka,v2 - DPM (no difficulty filter),0.0,0.0,0.225
+GK_Ebbaka,v2 - DMF (popularity ranking),0.0,0.0,0.475
+GK_Ebbaka,v2 - diagnosis (all concepts weak),0.0,0.0,0.175
+GK_Ebbaka,v2 targeted (6 weakest concepts),0.0,0.0,0.175
+4c5948,Random,0.0,0.0,0.26
+4c5948,Popularity,0.0,0.0,0.08
+4c5948,DMF only (no KSAP filters),0.0,0.0,0.12
+4c5948,KSAP v1 (paper-faithful),0.0,0.0,0.22
+4c5948,KSAP v2,0.0,0.0,0.24
+4c5948,v2 - knowledge graph (order by mastery),0.4,0.0418,1.0
+4c5948,v2 - DPM (no difficulty filter),0.0,0.0,0.36
+4c5948,v2 - DMF (popularity ranking),0.0,0.0,0.22
+4c5948,v2 - diagnosis (all concepts weak),0.0,0.0,0.04
+4c5948,v2 targeted (6 weakest concepts),0.0,0.0,0.24
+Gilwall,Random,0.2,0.0377,0.16
+Gilwall,Popularity,0.8,0.6562,0.12
+Gilwall,DMF only (no KSAP filters),1.0,0.281,0.18
+Gilwall,KSAP v1 (paper-faithful),0.6,0.237,0.28
+Gilwall,KSAP v2,0.8,0.2906,0.3
+Gilwall,v2 - knowledge graph (order by mastery),1.0,0.2251,1.0
+Gilwall,v2 - DPM (no difficulty filter),1.0,0.3944,0.34
+Gilwall,v2 - DMF (popularity ranking),0.8,0.314,0.22
+Gilwall,v2 - diagnosis (all concepts weak),1.0,0.2936,0.16
+Gilwall,v2 targeted (6 weakest concepts),1.0,0.27,0.56
+Er_fun,Random,0.2,0.0278,0.28
+Er_fun,Popularity,0.0,0.0,0.06
+Er_fun,DMF only (no KSAP filters),1.0,0.2238,0.2
+Er_fun,KSAP v1 (paper-faithful),1.0,0.1326,0.16
+Er_fun,KSAP v2,1.0,0.1326,0.14
+Er_fun,v2 - knowledge graph (order by mastery),0.2,0.0278,1.0
+Er_fun,v2 - DPM (no difficulty filter),1.0,0.237,0.24
+Er_fun,v2 - DMF (popularity ranking),0.0,0.0,0.08
+Er_fun,v2 - diagnosis (all concepts weak),1.0,0.1326,0.14
+Er_fun,v2 targeted (6 weakest concepts),1.0,0.1199,0.16
+Aiharashiro,Random,0.0,0.0,0.38
+Aiharashiro,Popularity,0.2,0.026,0.1
+Aiharashiro,DMF only (no KSAP filters),0.0,0.0,0.34
+Aiharashiro,KSAP v1 (paper-faithful),0.0,0.0,0.36
+Aiharashiro,KSAP v2,0.0,0.0,0.26
+Aiharashiro,v2 - knowledge graph (order by mastery),0.2,0.019,1.0
+Aiharashiro,v2 - DPM (no difficulty filter),0.0,0.0,0.28
+Aiharashiro,v2 - DMF (popularity ranking),0.2,0.0377,0.22
+Aiharashiro,v2 - diagnosis (all concepts weak),0.0,0.0,0.26
+Aiharashiro,v2 targeted (6 weakest concepts),0.0,0.0,0.26
+BessieTheCow,Random,0.0,0.0,0.26
+BessieTheCow,Popularity,0.0,0.0,0.14
+BessieTheCow,DMF only (no KSAP filters),0.0,0.0,0.2
+BessieTheCow,KSAP v1 (paper-faithful),0.0,0.0,0.34
+BessieTheCow,KSAP v2,0.0,0.0,0.18
+BessieTheCow,v2 - knowledge graph (order by mastery),0.0,0.0,1.0
+BessieTheCow,v2 - DPM (no difficulty filter),0.0,0.0,0.3
+BessieTheCow,v2 - DMF (popularity ranking),0.0,0.0,0.2
+BessieTheCow,v2 - diagnosis (all concepts weak),0.0,0.0,0.1
+BessieTheCow,v2 targeted (6 weakest concepts),0.0,0.0,0.3
+B0JACK,Random,0.0,0.0,0.14
+B0JACK,Popularity,0.6,0.1597,0.18
+B0JACK,DMF only (no KSAP filters),0.0,0.0,0.32
+B0JACK,KSAP v1 (paper-faithful),0.6,0.0641,0.3
+B0JACK,KSAP v2,0.6,0.0641,0.16
+B0JACK,v2 - knowledge graph (order by mastery),0.2,0.0278,1.0
+B0JACK,v2 - DPM (no difficulty filter),0.0,0.0,0.34
+B0JACK,v2 - DMF (popularity ranking),0.8,0.2054,0.22
+B0JACK,v2 - diagnosis (all concepts weak),0.6,0.0641,0.16
+B0JACK,v2 targeted (6 weakest concepts),0.6,0.0641,0.32
+At128,Random,0.0,0.0,0.26
+At128,Popularity,1.0,0.1439,0.08
+At128,DMF only (no KSAP filters),0.0,0.0,0.14
+At128,KSAP v1 (paper-faithful),1.0,0.1485,0.16
+At128,KSAP v2,1.0,0.1607,0.0
+At128,v2 - knowledge graph (order by mastery),0.0,0.0,1.0
+At128,v2 - DPM (no difficulty filter),0.0,0.0,0.14
+At128,v2 - DMF (popularity ranking),1.0,0.2088,0.0
+At128,v2 - diagnosis (all concepts weak),1.0,0.1607,0.0
+At128,v2 targeted (6 weakest concepts),1.0,0.1607,0.0
+ASTROBOYZZ,Random,0.2,0.0157,0.14
+ASTROBOYZZ,Popularity,0.4,0.2964,0.18
+ASTROBOYZZ,DMF only (no KSAP filters),0.6,0.166,0.14
+ASTROBOYZZ,KSAP v1 (paper-faithful),0.8,0.1678,0.28
+ASTROBOYZZ,KSAP v2,0.8,0.2653,0.26
+ASTROBOYZZ,v2 - knowledge graph (order by mastery),0.2,0.0157,1.0
+ASTROBOYZZ,v2 - DPM (no difficulty filter),0.8,0.2456,0.3
+ASTROBOYZZ,v2 - DMF (popularity ranking),0.4,0.0775,0.22
+ASTROBOYZZ,v2 - diagnosis (all concepts weak),1.0,0.3418,0.08
+ASTROBOYZZ,v2 targeted (6 weakest concepts),0.6,0.0909,0.66
+ChiNhan,Random,0.2,0.019,0.1
+ChiNhan,Popularity,0.0,0.0,0.16
+ChiNhan,DMF only (no KSAP filters),1.0,0.3451,0.1
+ChiNhan,KSAP v1 (paper-faithful),0.6,0.1496,0.54
+ChiNhan,KSAP v2,0.6,0.1915,0.46
+ChiNhan,v2 - knowledge graph (order by mastery),0.6,0.0464,1.0
+ChiNhan,v2 - DPM (no difficulty filter),0.6,0.2322,0.52
+ChiNhan,v2 - DMF (popularity ranking),0.0,0.0,0.48
+ChiNhan,v2 - diagnosis (all concepts weak),1.0,0.3197,0.06
+ChiNhan,v2 targeted (6 weakest concepts),0.6,0.1915,0.48
+A.K.E.E.,Random,0.2,0.0157,0.2
+A.K.E.E.,Popularity,1.0,0.6192,0.02
+A.K.E.E.,DMF only (no KSAP filters),1.0,0.6806,0.24
+A.K.E.E.,KSAP v1 (paper-faithful),1.0,0.779,0.2
+A.K.E.E.,KSAP v2,1.0,0.625,0.14
+A.K.E.E.,v2 - knowledge graph (order by mastery),1.0,0.2715,1.0
+A.K.E.E.,v2 - DPM (no difficulty filter),1.0,0.6438,0.2
+A.K.E.E.,v2 - DMF (popularity ranking),1.0,0.3546,0.08
+A.K.E.E.,v2 - diagnosis (all concepts weak),1.0,0.625,0.14
+A.K.E.E.,v2 targeted (6 weakest concepts),1.0,0.5155,0.36
+1718336603,Random,0.2,0.0147,0.16
+1718336603,Popularity,0.0,0.0,0.1
+1718336603,DMF only (no KSAP filters),1.0,0.0733,0.2
+1718336603,KSAP v1 (paper-faithful),0.6,0.0382,0.4
+1718336603,KSAP v2,0.0,0.0,0.26
+1718336603,v2 - knowledge graph (order by mastery),0.2,0.0278,1.0
+1718336603,v2 - DPM (no difficulty filter),0.0,0.0,0.36
+1718336603,v2 - DMF (popularity ranking),0.0,0.0,0.28
+1718336603,v2 - diagnosis (all concepts weak),0.0,0.0,0.06
+1718336603,v2 targeted (6 weakest concepts),0.2,0.0127,0.3
+127.0.0.1.,Random,0.25,0.0723,0.25
+127.0.0.1.,Popularity,0.0,0.0,0.15
+127.0.0.1.,DMF only (no KSAP filters),0.0,0.0,0.175
+127.0.0.1.,KSAP v1 (paper-faithful),0.0,0.0,0.175
+127.0.0.1.,KSAP v2,0.0,0.0,0.15
+127.0.0.1.,v2 - knowledge graph (order by mastery),0.0,0.0,1.0
+127.0.0.1.,v2 - DPM (no difficulty filter),0.0,0.0,0.2
+127.0.0.1.,v2 - DMF (popularity ranking),0.0,0.0,0.15
+127.0.0.1.,v2 - diagnosis (all concepts weak),0.0,0.0,0.15
+127.0.0.1.,v2 targeted (6 weakest concepts),0.0,0.0,0.15

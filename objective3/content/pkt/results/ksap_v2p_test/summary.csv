@@ -1,0 +1,7 @@
+method,HR@10,Precision@10,Recall@10,NDCG@10,model_expected_success,share_targeting_6_weakest,distinct_concepts_in_list
+Random,0.1205,0.013,0.0133,0.0144,0.6201,0.2486,14.4636
+Popularity,0.3727,0.1436,0.0443,0.1467,0.731,0.1214,9.1545
+DMF only (no KSAP filters),0.4273,0.1364,0.024,0.131,0.6834,0.2055,11.2568
+KSAP v1 (paper-faithful),0.4727,0.1182,0.0211,0.1197,0.6551,0.3198,13.8727
+KSAP v2,0.4636,0.1255,0.0247,0.1244,0.6905,0.2348,10.4182
+KSAP v2-P (personalised prerequisites),0.3818,0.0773,0.0126,0.0857,0.5269,0.4516,14.1364

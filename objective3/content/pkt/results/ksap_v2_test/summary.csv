@@ -1,0 +1,11 @@
+method,HR@10,Precision@10,Recall@10,NDCG@10,model_expected_success,share_targeting_6_weakest,distinct_concepts_in_list
+Random,0.1205,0.013,0.0133,0.0144,0.6201,0.2486,14.4636
+Popularity,0.3727,0.1436,0.0443,0.1467,0.731,0.1214,9.1545
+DMF only (no KSAP filters),0.4273,0.1364,0.024,0.131,0.6834,0.2055,11.2568
+KSAP v1 (paper-faithful),0.4727,0.1182,0.0211,0.1197,0.6551,0.3198,13.8727
+KSAP v2,0.4636,0.1255,0.0247,0.1244,0.6905,0.2348,10.4182
+v2 - knowledge graph (order by mastery),0.2727,0.0455,0.008,0.0481,0.4667,1.0,17.2
+v2 - DPM (no difficulty filter),0.4,0.1273,0.0215,0.1253,0.6718,0.2966,11.9432
+v2 - DMF (popularity ranking),0.4091,0.0891,0.048,0.1053,0.6956,0.223,10.4091
+v2 - diagnosis (all concepts weak),0.5273,0.1409,0.0286,0.1408,0.712,0.1475,9.8364
+v2 targeted (6 weakest concepts),0.4727,0.1127,0.0237,0.1106,0.6828,0.2966,11.4909

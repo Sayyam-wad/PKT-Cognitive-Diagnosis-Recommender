@@ -1,0 +1,7 @@
+valid: 17 learners; within-learner ranking over 17 learners
+diagnosis    AUC@10  AUC@50  Brier@10  Brier@50  within-learner rho
+last         0.582   0.568   0.295     0.307     +0.136
+ema          0.602   0.611   0.256     0.264     +0.191
+calibrated   0.571   0.579   0.252     0.247     +0.258
+within-learner rho, ema - last: +0.055  95% CI [+0.022, +0.086]
+within-learner rho, calibrated - last: +0.122  95% CI [+0.064, +0.185]

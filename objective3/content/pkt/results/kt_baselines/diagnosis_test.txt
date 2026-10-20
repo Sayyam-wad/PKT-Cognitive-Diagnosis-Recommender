@@ -1,0 +1,9 @@
+test: 22 learners; within-learner ranking over 21 learners
+diagnosis    AUC@10  AUC@50  Brier@10  Brier@50  within-learner rho
+ASTNN-Longformer 0.550   0.570   0.322     0.311     +0.107
+DKT          0.546   0.566   0.266     0.260     +0.210
+DKVMN        0.574   0.584   0.249     0.246     +0.230
+SAKT         0.566   0.589   0.251     0.249     +0.204
+within-learner rho, DKT - ASTNN-Longformer: +0.103  95% CI [+0.023, +0.185]
+within-learner rho, DKVMN - ASTNN-Longformer: +0.123  95% CI [+0.050, +0.205]
+within-learner rho, SAKT - ASTNN-Longformer: +0.096  95% CI [+0.004, +0.183]

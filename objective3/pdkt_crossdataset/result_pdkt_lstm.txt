@@ -1,0 +1,4 @@
+run.test metrics: {'auc': 0.6160747851964701, 'pr_auc': 0.4584831197411944, 'accuracy': 0.5338016267032851, 'precision': 0.3966996084281186, 'recall': 0.6436242625926486, 'f1': 0.49085770317817384}
+RESULT  pdkt_astnn_test
+  predictions 18934  positive rate 0.349
+  AUC 0.6161  ACC 0.5338  F1 0.4909  MSE 0.2459

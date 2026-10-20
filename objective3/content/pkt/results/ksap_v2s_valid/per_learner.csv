@@ -1,0 +1,103 @@
+learner,method,HR@10,NDCG@10,targets_6_weakest
+Ali.Kh,Random,0.8,0.1547,0.18
+Ali.Kh,Popularity,1.0,0.9368,0.26
+Ali.Kh,DMF only (no KSAP filters),1.0,0.8843,0.12
+Ali.Kh,KSAP v1 (paper-faithful),1.0,0.8436,0.12
+Ali.Kh,KSAP v2,1.0,0.7877,0.32
+Ali.Kh,KSAP v2-S (smoothed diagnosis),1.0,0.7817,0.3667
+Enjoy_the_game,Random,0.0,0.0,0.22
+Enjoy_the_game,Popularity,0.0,0.0,0.3
+Enjoy_the_game,DMF only (no KSAP filters),0.4,0.088,0.1
+Enjoy_the_game,KSAP v1 (paper-faithful),0.4,0.0379,0.0
+Enjoy_the_game,KSAP v2,0.4,0.0293,0.0
+Enjoy_the_game,KSAP v2-S (smoothed diagnosis),0.4,0.044,0.1
+Backseat-Stargazer,Random,0.0,0.0,0.18
+Backseat-Stargazer,Popularity,0.0,0.0,0.14
+Backseat-Stargazer,DMF only (no KSAP filters),0.0,0.0,0.06
+Backseat-Stargazer,KSAP v1 (paper-faithful),0.0,0.0,0.06
+Backseat-Stargazer,KSAP v2,0.0,0.0,0.1
+Backseat-Stargazer,KSAP v2-S (smoothed diagnosis),0.0,0.0,0.14
+EconomYistik,Random,0.0,0.0,0.32
+EconomYistik,Popularity,0.0,0.0,0.36
+EconomYistik,DMF only (no KSAP filters),0.0,0.0,0.14
+EconomYistik,KSAP v1 (paper-faithful),0.0,0.0,0.24
+EconomYistik,KSAP v2,0.0,0.0,0.26
+EconomYistik,KSAP v2-S (smoothed diagnosis),0.0,0.0,0.52
+DimaTomsk,Random,0.0,0.0,0.34
+DimaTomsk,Popularity,0.0,0.0,0.42
+DimaTomsk,DMF only (no KSAP filters),0.0,0.0,0.16
+DimaTomsk,KSAP v1 (paper-faithful),0.2,0.022,0.28
+DimaTomsk,KSAP v2,0.2,0.0347,0.18
+DimaTomsk,KSAP v2-S (smoothed diagnosis),0.2,0.0467,0.5356
+Abanoub_Moris,Random,0.0,0.0,0.24
+Abanoub_Moris,Popularity,0.0,0.0,0.28
+Abanoub_Moris,DMF only (no KSAP filters),0.2,0.0139,0.16
+Abanoub_Moris,KSAP v1 (paper-faithful),0.0,0.0,0.06
+Abanoub_Moris,KSAP v2,0.0,0.0,0.22
+Abanoub_Moris,KSAP v2-S (smoothed diagnosis),0.2,0.0127,0.6
+Elsa,Random,0.0,0.0,0.08
+Elsa,Popularity,0.0,0.0,0.28
+Elsa,DMF only (no KSAP filters),0.4,0.0467,0.1
+Elsa,KSAP v1 (paper-faithful),0.0,0.0,0.08
+Elsa,KSAP v2,0.0,0.0,0.04
+Elsa,KSAP v2-S (smoothed diagnosis),0.0,0.0,0.3533
+Akz_Moudud,Random,0.4,0.0417,0.36
+Akz_Moudud,Popularity,0.6,0.0833,0.4
+Akz_Moudud,DMF only (no KSAP filters),0.8,0.5055,0.26
+Akz_Moudud,KSAP v1 (paper-faithful),0.8,0.4815,0.02
+Akz_Moudud,KSAP v2,0.8,0.4297,0.04
+Akz_Moudud,KSAP v2-S (smoothed diagnosis),1.0,0.3167,0.18
+Ganesh_Codes,Random,0.2,0.022,0.1
+Ganesh_Codes,Popularity,0.0,0.0,0.32
+Ganesh_Codes,DMF only (no KSAP filters),0.6,0.088,0.1
+Ganesh_Codes,KSAP v1 (paper-faithful),0.4,0.0493,0.06
+Ganesh_Codes,KSAP v2,0.0,0.0,0.2
+Ganesh_Codes,KSAP v2-S (smoothed diagnosis),0.2,0.017,0.16
+Black_Eye,Random,0.0,0.0,0.12
+Black_Eye,Popularity,0.0,0.0,0.3
+Black_Eye,DMF only (no KSAP filters),0.2,0.0866,0.12
+Black_Eye,KSAP v1 (paper-faithful),0.2,0.0327,0.08
+Black_Eye,KSAP v2,0.2,0.0399,0.04
+Black_Eye,KSAP v2-S (smoothed diagnosis),0.2,0.019,0.34
+Droping,Random,0.0,0.0,0.24
+Droping,Popularity,0.0,0.0,0.34
+Droping,DMF only (no KSAP filters),0.0,0.0,0.1
+Droping,KSAP v1 (paper-faithful),0.0,0.0,0.1
+Droping,KSAP v2,0.0,0.0,0.1
+Droping,KSAP v2-S (smoothed diagnosis),0.0,0.0,0.24
+HalTea,Random,0.2,0.066,0.08
+HalTea,Popularity,0.0,0.0,0.26
+HalTea,DMF only (no KSAP filters),0.0,0.0,0.06
+HalTea,KSAP v1 (paper-faithful),0.0,0.0,0.08
+HalTea,KSAP v2,0.0,0.0,0.36
+HalTea,KSAP v2-S (smoothed diagnosis),0.0,0.0,0.3733
+-eidolon-,Random,0.0,0.0,0.14
+-eidolon-,Popularity,0.8,0.0555,0.34
+-eidolon-,DMF only (no KSAP filters),0.0,0.0,0.08
+-eidolon-,KSAP v1 (paper-faithful),0.0,0.0,0.02
+-eidolon-,KSAP v2,0.0,0.0,0.06
+-eidolon-,KSAP v2-S (smoothed diagnosis),0.0,0.0,0.2
+Deneme1,Random,0.0,0.0,0.26
+Deneme1,Popularity,0.0,0.0,0.32
+Deneme1,DMF only (no KSAP filters),0.2,0.022,0.24
+Deneme1,KSAP v1 (paper-faithful),0.0,0.0,0.02
+Deneme1,KSAP v2,0.0,0.0,0.1
+Deneme1,KSAP v2-S (smoothed diagnosis),0.0,0.0,0.26
+ARegularCoder,Random,0.0,0.0,0.24
+ARegularCoder,Popularity,0.0,0.0,0.34
+ARegularCoder,DMF only (no KSAP filters),0.0,0.0,0.18
+ARegularCoder,KSAP v1 (paper-faithful),0.0,0.0,0.08
+ARegularCoder,KSAP v2,0.0,0.0,0.0
+ARegularCoder,KSAP v2-S (smoothed diagnosis),0.0,0.0,0.22
+Georgiy_Ulanov,Random,0.2,0.0278,0.22
+Georgiy_Ulanov,Popularity,0.0,0.0,0.36
+Georgiy_Ulanov,DMF only (no KSAP filters),0.2,0.0147,0.22
+Georgiy_Ulanov,KSAP v1 (paper-faithful),0.4,0.0314,0.08
+Georgiy_Ulanov,KSAP v2,0.6,0.0705,0.2
+Georgiy_Ulanov,KSAP v2-S (smoothed diagnosis),0.2,0.044,0.26
+Errichto,Random,0.6,0.089,0.18
+Errichto,Popularity,1.0,0.1428,0.28
+Errichto,DMF only (no KSAP filters),1.0,0.2411,0.26
+Errichto,KSAP v1 (paper-faithful),1.0,0.0729,0.12
+Errichto,KSAP v2,1.0,0.2195,0.2
+Errichto,KSAP v2-S (smoothed diagnosis),1.0,0.2134,0.28

@@ -1,0 +1,1 @@
+RESULT ASTNN-Longformer, same protocol as baselines: AUC 0.6362 on 6445 predictions

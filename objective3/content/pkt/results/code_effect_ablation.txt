@@ -1,0 +1,6 @@
+mean |change| over 37 concepts vs the real attempt   (last-step / smoothed / smoothed+record), 204 validation attempts
+  code swapped (same verdict, same tags)     0.105  0.011  0.011
+  code removed (same verdict, same tags)     0.102  0.011  0.011
+  verdict flipped (same code)                0.160  0.038  0.038
+  tags swapped (same code)                   0.120  0.017  0.018
+  adding the attempt at all                  0.159  0.026  0.025

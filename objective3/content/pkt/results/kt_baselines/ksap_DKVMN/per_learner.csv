@@ -1,0 +1,133 @@
+learner,method,HR@10,NDCG@10,targets_6_weakest
+Fast_n_Furious,Random,0.0,0.0,0.08
+Fast_n_Furious,Popularity,1.0,0.4394,0.1
+Fast_n_Furious,DMF only (no KSAP filters),0.0,0.0,0.0
+Fast_n_Furious,KSAP v1 (paper-faithful),1.0,0.2059,0.0
+Fast_n_Furious,KSAP v2,1.0,0.1222,0.0
+Fast_n_Furious,KSAP v2-P (personalised prerequisites),0.4,0.0377,0.02
+AndresRPerez,Random,0.0,0.0,0.16
+AndresRPerez,Popularity,1.0,0.0746,0.1
+AndresRPerez,DMF only (no KSAP filters),0.0,0.0,0.0
+AndresRPerez,KSAP v1 (paper-faithful),0.0,0.0,0.1
+AndresRPerez,KSAP v2,0.0,0.0,0.0
+AndresRPerez,KSAP v2-P (personalised prerequisites),0.0,0.0,0.1
+C-_-Devil_Code,Random,0.4,0.026,0.06
+C-_-Devil_Code,Popularity,0.8,0.6615,0.12
+C-_-Devil_Code,DMF only (no KSAP filters),1.0,0.552,0.04
+C-_-Devil_Code,KSAP v1 (paper-faithful),1.0,0.4839,0.0
+C-_-Devil_Code,KSAP v2,1.0,0.2984,0.0
+C-_-Devil_Code,KSAP v2-P (personalised prerequisites),0.6,0.124,0.12
+BlackDwek,Random,0.2,0.0139,0.04
+BlackDwek,Popularity,0.0,0.0,0.1
+BlackDwek,DMF only (no KSAP filters),0.4,0.0915,0.1
+BlackDwek,KSAP v1 (paper-faithful),1.0,0.1896,0.0
+BlackDwek,KSAP v2,0.8,0.1895,0.0
+BlackDwek,KSAP v2-P (personalised prerequisites),0.8,0.1401,0.0
+Gushi,Random,0.0,0.0,0.04
+Gushi,Popularity,0.0,0.0,0.1
+Gushi,DMF only (no KSAP filters),0.0,0.0,0.0
+Gushi,KSAP v1 (paper-faithful),0.2,0.044,0.0
+Gushi,KSAP v2,0.2,0.019,0.0
+Gushi,KSAP v2-P (personalised prerequisites),0.0,0.0,0.06
+Captain_nick,Random,0.0,0.0,0.08
+Captain_nick,Popularity,0.0,0.0,0.1
+Captain_nick,DMF only (no KSAP filters),0.0,0.0,0.0
+Captain_nick,KSAP v1 (paper-faithful),0.0,0.0,0.1
+Captain_nick,KSAP v2,0.0,0.0,0.0
+Captain_nick,KSAP v2-P (personalised prerequisites),0.0,0.0,0.0
+BluBeer,Random,0.0,0.0,0.02
+BluBeer,Popularity,0.8,0.0598,0.06
+BluBeer,DMF only (no KSAP filters),1.0,0.1355,0.0
+BluBeer,KSAP v1 (paper-faithful),0.8,0.2156,0.0
+BluBeer,KSAP v2,0.8,0.1291,0.0
+BluBeer,KSAP v2-P (personalised prerequisites),0.6,0.1167,0.04
+ATS,Random,0.2,0.0133,0.08
+ATS,Popularity,0.0,0.0,0.1
+ATS,DMF only (no KSAP filters),0.4,0.1348,0.04
+ATS,KSAP v1 (paper-faithful),0.4,0.0698,0.02
+ATS,KSAP v2,0.4,0.0425,0.02
+ATS,KSAP v2-P (personalised prerequisites),0.8,0.1109,0.02
+-Chim-,Random,0.4,0.061,0.12
+-Chim-,Popularity,0.6,0.0912,0.1
+-Chim-,DMF only (no KSAP filters),1.0,0.1972,0.0
+-Chim-,KSAP v1 (paper-faithful),1.0,0.2265,0.0
+-Chim-,KSAP v2,1.0,0.1585,0.0
+-Chim-,KSAP v2-P (personalised prerequisites),1.0,0.2571,0.0
+GK_Ebbaka,Random,0.0,0.0,0.025
+GK_Ebbaka,Popularity,0.0,0.0,0.1
+GK_Ebbaka,DMF only (no KSAP filters),0.0,0.0,0.0
+GK_Ebbaka,KSAP v1 (paper-faithful),0.0,0.0,0.0
+GK_Ebbaka,KSAP v2,0.0,0.0,0.0
+GK_Ebbaka,KSAP v2-P (personalised prerequisites),0.0,0.0,0.0
+4c5948,Random,0.0,0.0,0.06
+4c5948,Popularity,0.0,0.0,0.1
+4c5948,DMF only (no KSAP filters),0.0,0.0,0.0
+4c5948,KSAP v1 (paper-faithful),0.0,0.0,0.0
+4c5948,KSAP v2,0.0,0.0,0.0
+4c5948,KSAP v2-P (personalised prerequisites),0.2,0.0278,0.0
+Gilwall,Random,0.2,0.0377,0.1
+Gilwall,Popularity,0.8,0.6562,0.08
+Gilwall,DMF only (no KSAP filters),1.0,0.281,0.0
+Gilwall,KSAP v1 (paper-faithful),0.4,0.1317,0.14
+Gilwall,KSAP v2,0.6,0.1465,0.16
+Gilwall,KSAP v2-P (personalised prerequisites),0.4,0.0898,0.14
+Er_fun,Random,0.2,0.0278,0.12
+Er_fun,Popularity,0.0,0.0,0.1
+Er_fun,DMF only (no KSAP filters),1.0,0.2238,0.1
+Er_fun,KSAP v1 (paper-faithful),0.6,0.1359,0.0
+Er_fun,KSAP v2,1.0,0.2739,0.0
+Er_fun,KSAP v2-P (personalised prerequisites),0.6,0.1359,0.0
+Aiharashiro,Random,0.0,0.0,0.06
+Aiharashiro,Popularity,0.2,0.026,0.1
+Aiharashiro,DMF only (no KSAP filters),0.0,0.0,0.04
+Aiharashiro,KSAP v1 (paper-faithful),0.0,0.0,0.0
+Aiharashiro,KSAP v2,0.0,0.0,0.0
+Aiharashiro,KSAP v2-P (personalised prerequisites),0.2,0.0127,0.08
+BessieTheCow,Random,0.0,0.0,0.1
+BessieTheCow,Popularity,0.0,0.0,0.1
+BessieTheCow,DMF only (no KSAP filters),0.0,0.0,0.0
+BessieTheCow,KSAP v1 (paper-faithful),0.0,0.0,0.0
+BessieTheCow,KSAP v2,0.0,0.0,0.0
+BessieTheCow,KSAP v2-P (personalised prerequisites),0.0,0.0,0.02
+B0JACK,Random,0.0,0.0,0.14
+B0JACK,Popularity,0.6,0.1597,0.06
+B0JACK,DMF only (no KSAP filters),0.0,0.0,0.0
+B0JACK,KSAP v1 (paper-faithful),0.6,0.0484,0.0
+B0JACK,KSAP v2,0.6,0.0404,0.0
+B0JACK,KSAP v2-P (personalised prerequisites),0.2,0.039,0.0
+At128,Random,0.0,0.0,0.06
+At128,Popularity,1.0,0.1439,0.1
+At128,DMF only (no KSAP filters),0.0,0.0,0.0
+At128,KSAP v1 (paper-faithful),0.8,0.166,0.0
+At128,KSAP v2,0.8,0.079,0.0
+At128,KSAP v2-P (personalised prerequisites),0.0,0.0,0.04
+ASTROBOYZZ,Random,0.2,0.0157,0.12
+ASTROBOYZZ,Popularity,0.4,0.2964,0.16
+ASTROBOYZZ,DMF only (no KSAP filters),0.6,0.166,0.02
+ASTROBOYZZ,KSAP v1 (paper-faithful),0.6,0.2327,0.2
+ASTROBOYZZ,KSAP v2,0.6,0.3171,0.2
+ASTROBOYZZ,KSAP v2-P (personalised prerequisites),0.8,0.2073,0.24
+ChiNhan,Random,0.2,0.019,0.04
+ChiNhan,Popularity,0.0,0.0,0.1
+ChiNhan,DMF only (no KSAP filters),1.0,0.3451,0.0
+ChiNhan,KSAP v1 (paper-faithful),0.8,0.1754,0.16
+ChiNhan,KSAP v2,0.8,0.3644,0.16
+ChiNhan,KSAP v2-P (personalised prerequisites),0.8,0.0716,0.18
+A.K.E.E.,Random,0.2,0.0157,0.08
+A.K.E.E.,Popularity,1.0,0.6192,0.1
+A.K.E.E.,DMF only (no KSAP filters),1.0,0.6806,0.14
+A.K.E.E.,KSAP v1 (paper-faithful),1.0,0.6628,0.02
+A.K.E.E.,KSAP v2,1.0,0.4813,0.02
+A.K.E.E.,KSAP v2-P (personalised prerequisites),0.8,0.4113,0.12
+1718336603,Random,0.2,0.0147,0.02
+1718336603,Popularity,0.0,0.0,0.1
+1718336603,DMF only (no KSAP filters),1.0,0.0733,0.1
+1718336603,KSAP v1 (paper-faithful),0.0,0.0,0.0
+1718336603,KSAP v2,0.0,0.0,0.0
+1718336603,KSAP v2-P (personalised prerequisites),0.0,0.0,0.08
+127.0.0.1.,Random,0.25,0.0723,0.075
+127.0.0.1.,Popularity,0.0,0.0,0.1
+127.0.0.1.,DMF only (no KSAP filters),0.0,0.0,0.025
+127.0.0.1.,KSAP v1 (paper-faithful),0.0,0.0,0.0
+127.0.0.1.,KSAP v2,0.0,0.0,0.0
+127.0.0.1.,KSAP v2-P (personalised prerequisites),0.0,0.0,0.225
