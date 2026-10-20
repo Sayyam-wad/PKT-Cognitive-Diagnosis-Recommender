@@ -16,3 +16,6 @@ objective3/pdkt_crossdataset/work/
 objective3/pdkt_crossdataset/raw/
 my_results/
 objective3/my_results/
+objective2/epoch_metrics.csv
+objective2/*.png
+objective2/results/pdkt_lstm/

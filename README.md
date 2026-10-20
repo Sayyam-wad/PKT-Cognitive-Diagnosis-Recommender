@@ -156,41 +156,68 @@ python -m pytest -q                             # 90 tests
 
 ### Objective 2
 
-Run from `objective2/`. The trained checkpoints are already in `objective2/results/`, so training is optional.
+The trained checkpoints are already in `objective2/results/`, so you can evaluate straight away.
 
-```bash
-cd objective2
-python -m models.astnn.main                              # train ASTNN + Longformer (tuned hyper-parameters, 50 epochs)
-python -m models.astnn.main_metrics                      # evaluate on the Codeforces test split
-python -m models.astnn.main_lstm --dataset codeforces    # train the ASTNN + LSTM baseline
-```
-
-To evaluate on CPU, or on any file in the same format such as the PDKT data, run:
+**Evaluate (CPU or GPU).** Run from `objective3/pdkt_crossdataset/`:
 
 ```bash
 cd objective3/pdkt_crossdataset
-python evaluate_original.py ../../objective2/data/codeforces/astnn/astnn_test \
-       ../../objective2/data/codeforces/astnn/node_w2v_128 ../../objective2/results/best_longformer_model.pt
+# ASTNN + Longformer, Codeforces test  ->  AUC 0.8361  ACC 0.7528  F1 0.7594  MSE 0.1680
+python evaluate_original.py ../../objective2/data/codeforces/astnn/astnn_test ../../objective2/data/codeforces/astnn/node_w2v_128 ../../objective2/results/best_longformer_model.pt
+# ASTNN + LSTM, Codeforces test        ->  AUC 0.7035  ACC 0.6577  F1 0.6806  MSE 0.2215
+python evaluate_lstm.py ../../objective2/data/codeforces/astnn/astnn_test ../../objective2/data/codeforces/astnn/node_w2v_128 ../../objective2/results/best_lstm_model.pt
+
+# PDKT zero-shot: rebuild the full PDKT file (584 learners) from the included split, then evaluate
+python full_test_file.py
+python evaluate_original.py work/pdkt_astnn_test ../../objective2/data/codeforces/astnn/node_w2v_128 ../../objective2/results/best_longformer_model.pt   # AUC 0.7700
+python evaluate_lstm.py     work/pdkt_astnn_test ../../objective2/data/codeforces/astnn/node_w2v_128 ../../objective2/results/best_lstm_model.pt        # AUC 0.6161
 ```
 
-`evaluate_lstm.py` does the same for the baseline. If you retrain, run `python setup_data.py` again so Objective 3 uses the new checkpoint.
+These scripts use the original model code and settings. On a CUDA machine you can also use the original evaluation script, `cd objective2 && python -m models.astnn.main_metrics`.
+
+**Train (GPU recommended).** Run from `objective2/`:
+
+```bash
+cd objective2
+python -m models.astnn.main                              # ASTNN + Longformer, tuned hyper-parameters, 50 epochs (add --gpu -1 for CPU: several hours)
+python -m models.astnn.main_lstm --dataset codeforces    # ASTNN + LSTM baseline (saves to results/pdkt_lstm/)
+```
+
+Training writes the best validation checkpoint to `objective2/results/best_longformer_model.pt`, replacing the shipped one. `git checkout objective2/results` restores the original. Run `python setup_data.py` again afterwards so Objective 3 uses the newly trained checkpoint.
 
 ### Objective 3
 
-Run from `objective3/`. The saved output of every run is in `content/pkt/results/`.
+Run from `objective3/`. The saved output of every run is in `content/pkt/results/`, so you can compare your outputs file by file.
 
 ```bash
-# Codeforces main result (KSAP v1/v2, baselines, ablation); use --set personalised for KSAP v2-P
+cd objective3
+
+# Codeforces main result: KSAP v1/v2, baselines and ablation   (compare with content/pkt/results/ksap_v2_test/)
 python content/pkt/scripts/v2_final.py --archive data/codeforces.zip --bundle content/pkt/results/ksap_hf_v1 \
   --cache content/pkt/results/ksap_last_inputs/mastery_cache.json \
   --full-mastery content/pkt/results/ksap_last_inputs/valid_full_mastery.json \
   --split test --set main --output-dir my_results/main
+# the same command with --set personalised gives KSAP v2-P   (compare with content/pkt/results/ksap_v2p_test/)
 
-# DKT / DKVMN / SAKT
+# PDKT: diagnosis inputs, then KSAP with every setting frozen   (compare with content/pkt/results/pdkt_ksap_test_main/)
+python pdkt_crossdataset/mastery_inputs.py
+python content/pkt/scripts/v2_final.py --archive pdkt_crossdataset/pdkt.zip --bundle content/pkt/results/ksap_hf_v1 \
+  --training-mastery pdkt_crossdataset/work/training_mastery.json \
+  --full-mastery pdkt_crossdataset/work/valid_full_mastery.json \
+  --cache pdkt_crossdataset/work/mastery_cache.json \
+  --split test --set main --output-dir my_results/pdkt_main
+
+# DKT / DKVMN / SAKT (3 seeds each; about an hour on CPU)
 python content/pkt/scripts/kt_baselines.py --archive data/codeforces.zip --out my_results/kt_baselines
 
-# PDKT: diagnosis inputs, then the same v2_final.py run with --archive pdkt_crossdataset/pdkt.zip
-python pdkt_crossdataset/mastery_inputs.py
+# diagnosis quality: last-step vs smoothed vs calibrated   (compare with content/pkt/results/ksap_calibrated/diagnosis_test.txt)
+python content/pkt/scripts/diagnosis_eval.py --split test \
+  --cache last=content/pkt/results/ksap_last_inputs/mastery_cache.json \
+          ema=content/pkt/results/ksap_ema_inputs/mastery_cache.json \
+          calibrated=content/pkt/results/ksap_calibrated/mastery_cache.json
+
+# C++ -> AST converter: exact match against the dataset's own trees (6/6)
+python validation/validate_converter.py
 ```
 
 The full command list for every experiment is in each write-up under [Documentation](#documentation).

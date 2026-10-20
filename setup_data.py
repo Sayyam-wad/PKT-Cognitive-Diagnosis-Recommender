@@ -15,12 +15,15 @@ import argparse
 import hashlib
 from pathlib import Path
 import shutil
+import subprocess
 import sys
+import tempfile
 import urllib.request
 import zipfile
 
 ROOT = Path(__file__).resolve().parent
 URL = "https://github.com/pkt-attn/pkt-attn/raw/main/data/codeforces.zip"
+REPO = "https://github.com/pkt-attn/pkt-attn.git"
 ZIP_SHA = "cd317f221a65c2cb50e1ea03683960b300690145e5c5ebbb40e3b113bf5cd70d"
 CKPT_SHA = "b4be633b38edb435e110aba3b72d735eddc6356a63d73a15cceef1d0bbbd96a4"
 MEMBERS = ("astnn/astnn_train1", "astnn/astnn_valid1", "astnn/astnn_test", "astnn/node_w2v_128")
@@ -45,7 +48,13 @@ def main():
             shutil.copyfile(args.zip, target)
     elif not target.exists() or sha256(target) != ZIP_SHA:
         print(f"downloading {URL} (85 MB) ...", flush=True)
-        urllib.request.urlretrieve(URL, target)
+        try:
+            urllib.request.urlretrieve(URL, target)
+        except Exception as exc:                      # e.g. a proxy that blocks raw downloads
+            print(f"direct download failed ({exc}); trying git clone of {REPO} ...", flush=True)
+            with tempfile.TemporaryDirectory() as tmp:
+                subprocess.run(["git", "clone", "--depth", "1", REPO, tmp], check=True)
+                shutil.copyfile(Path(tmp) / "data" / "codeforces.zip", target)
     if sha256(target) != ZIP_SHA:
         sys.exit(f"checksum mismatch for {target}; expected the PKT Codeforces dataset (sha256 {ZIP_SHA[:12]}...)")
     print("dataset OK:", target)

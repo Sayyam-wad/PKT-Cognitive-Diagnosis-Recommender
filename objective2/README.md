@@ -40,8 +40,8 @@ A Longformer (local attention window 8) predicts success on the next attempt, wi
 From this folder, after `python setup_data.py` at the repository root:
 
 ```bash
-python -m models.astnn.main            # train (GPU 0 by default; --gpu -1 for CPU)
-python -m models.astnn.main_metrics    # evaluate
+python -m models.astnn.main            # train (GPU 0 by default)
+python -m models.astnn.main_metrics    # evaluate (loads the checkpoint onto the GPU)
 cp results/best_lstm_model.pt . && python -m models.astnn.main_lstm_metrics    # evaluate the baseline
 ```
 
@@ -51,5 +51,7 @@ cp results/best_lstm_model.pt . && python -m models.astnn.main_lstm_metrics    #
 |---|---|---|---|---|
 | ASTNN + LSTM | 0.7035 | 0.6577 | 0.6806 | 0.2215 |
 | **ASTNN + Longformer** | **0.8361** | **0.7528** | **0.7594** | **0.1680** |
+
+To evaluate on CPU, use `../objective3/pdkt_crossdataset/evaluate_original.py` and `evaluate_lstm.py` (same model code and settings; commands in the main README). Training replaces `results/best_longformer_model.pt`; `git checkout results` restores the shipped checkpoint.
 
 Zero-shot on the PDKT dataset (no retraining, 18,934 predictions), the Longformer reaches AUC 0.7700 against 0.6161 for the LSTM. See `../objective3/pdkt_crossdataset/README.md`.
